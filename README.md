@@ -92,7 +92,7 @@ Durante mi formación he desarrollado varios proyectos que me han permitido apre
 
 - **LinkedIn**: [Ramón Mendoza](https://www.linkedin.com/in/ram%C3%B3n-mendoza-candelario-8894252a9/)
 - **GitHub**: [Ramonmendoza13](https://github.com/Ramonmendoza13)
-- **Email**: [Enviar email](mailto:tu-email@ejemplo.com)
+- **Email**: [Enviar email](mailto:ramonm828@gmail.com)
 - **Teléfono**: [684129148](tel:684129148)
 
 ---
