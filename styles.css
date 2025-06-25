@@ -116,6 +116,38 @@ body {
   margin-top: 20px;
 }
 
+/* Botón de descarga CV */
+.boton-cv {
+  margin: 25px 0;
+}
+
+.btn-descargar-cv {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: var(--borde-redondeado);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.btn-descargar-cv:hover {
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-descargar-cv i {
+  font-size: 18px;
+}
+
 /* Sección de proyectos */
 .seccion-proyectos {
   padding: 80px 20px;
@@ -274,6 +306,11 @@ body {
     font-size: 36px;
   }
   
+  .btn-descargar-cv {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  
   .grid-proyectos {
     grid-template-columns: 1fr;
   }
@@ -295,6 +332,11 @@ body {
   
   .seccion-bienvenida p {
     font-size: 16px;
+  }
+  
+  .btn-descargar-cv {
+    padding: 8px 16px;
+    font-size: 13px;
   }
   
   .encabezado-proyectos h2 {
