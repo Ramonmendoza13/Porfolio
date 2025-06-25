@@ -2,7 +2,7 @@
 
 ## 👨‍💻 Sobre mí
 
-¡Hola! Soy desarrollador web recién graduado del Grado Superior en Desarrollo de Aplicaciones Web en el IES Trassiera. He completado los dos años de formación y estoy a la espera de realizar las prácticas.
+¡Hola! Soy desarrollador web recién graduado del Grado Superior en Desarrollo de Aplicaciones Web en el IES Aguadulce. He completado los dos años de formación y estoy a la espera de realizar las prácticas.
 
 Durante mi formación he desarrollado varios proyectos que me han permitido aprender HTML, CSS, JavaScript y otras tecnologías web. Me apasiona el desarrollo frontend y estoy ansioso por seguir aprendiendo y creciendo profesionalmente.
 
