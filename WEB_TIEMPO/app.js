@@ -38,6 +38,7 @@ function cargarHoras(dias) {
   const contenedor = $('#carrusel-horas');
   let totalHoras = 0;
   let diaAnterior = '';
+  const horaActual = new Date().getHours(); // Obtener la hora actual
 
   dias.forEach(dia => {
     const fecha = new Date(dia.date);
@@ -45,22 +46,26 @@ function cargarHoras(dias) {
 
     dia.hour.forEach(hora => {
       const horaTexto = hora.time.split(' ')[1];
+      const horaNumero = parseInt(horaTexto.split(':')[0]); // Extraer solo la hora (0-23)
+      
+      // Solo mostrar horas desde la hora actual
+      if (horaNumero >= horaActual) {
+        // Insertar separador si cambia el día
+        if (diaTexto !== diaAnterior) {
+          contenedor.append(`<div class="dia-separador">${diaTexto}</div>`);
+          diaAnterior = diaTexto;
+        }
 
-      // Insertar separador si cambia el día
-      if (diaTexto !== diaAnterior) {
-        contenedor.append(`<div class="dia-separador">${diaTexto}</div>`);
-        diaAnterior = diaTexto;
+        const tarjeta = `
+          <div class="tarjeta-hora">
+            <div>${horaTexto}</div>
+            <img src="${hora.condition.icon}" alt="icono">
+            <div>${hora.temp_c} °C</div>
+              <div>${hora.precip_mm} mm | ${hora.chance_of_rain}%</div>
+          </div>`;
+        contenedor.append(tarjeta);
+        totalHoras++;
       }
-
-      const tarjeta = `
-        <div class="tarjeta-hora">
-          <div>${horaTexto}</div>
-          <img src="${hora.condition.icon}" alt="icono">
-          <div>${hora.temp_c} °C</div>
-            <div>${hora.precip_mm} mm | ${hora.chance_of_rain}%</div>
-        </div>`;
-      contenedor.append(tarjeta);
-      totalHoras++;
     });
   });
 

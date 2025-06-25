@@ -1,398 +1,307 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
-
-.hero {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  background: #eff4fd;
-}
-
-nav {
-  display: flex;
-  width: 84%;
-  margin: auto;
-  padding: 20px 0;
-  align-items: center;
-  justify-content: space-between;
-}
-
-nav ul li {
-  display: inline-block;
-  list-style: none;
-  margin: 10px 20px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  color: white;
-}
-
-.detel {
-  margin-left: 8%;
-  margin-top: 15%;
-}
-
-.detl h1 {
-  font-size: 50px;
-  color: #212121;
-  margin-bottom: 20px;
-}
-
-span {
-  color: red;
-}
-
-.projects-section {
-  text-align: center;
-  padding: 10rem 2rem;
-  background: var(--main-blue);
-}
-
-/* Custom properties/variables  */
+/* Variables básicas */
 :root {
-  --main-white: #f0f0f0;
-  --main-red: #be3144;
-  --main-blue: #45567d;
-  --main-gray: #303841;
+  --color-principal: #2563eb;
+  --color-secundario: #1e40af;
+  --color-texto: #333;
+  --color-texto-claro: #666;
+  --color-fondo: #f8f9fa;
+  --color-blanco: #fff;
+  --sombra: 0 2px 10px rgba(0, 0, 0, 0.1);
+  --borde-redondeado: 8px;
 }
 
-/* Base reset */
+/* Reset básico */
 * {
   margin: 0;
   padding: 0;
-}
-
-/* box-sizing and font sizing */
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-html {
   box-sizing: border-box;
-
-  /* Set font size for easy rem calculations
-     * default document font size = 16px, 1rem = 16px, 100% = 16px
-     * (100% / 16px) * 10 = 62.5%, 1rem = 10px, 62.5% = 10px
-    */
-  font-size: 62.5%;
-  scroll-behavior: smooth;
 }
-
-/* A few media query to set some font sizes at different screen sizes.
-   * This helps automate a bit of responsiveness.
-   * The trick is to use the rem unit for size values, margin and padding.
-   * Because rem is relative to the document font size
-   * when we scale up or down the font size on the document
-   * it will affect all properties using rem units for the values.
-  */
-
-/* I am using the em unit for breakpoints
-   * The calculation is the following
-   * screen size divided by browser base font size
-   * As an example: a breakpoint at 980px
-   * 980px / 16px = 61.25em
-  */
-
-/* 1200px / 16px = 75em */
-@media (max-width: 75em) {
-  html {
-    font-size: 60%;
-  }
-}
-
-/* 980px / 16px = 61.25em */
-@media (max-width: 61.25em) {
-  html {
-    font-size: 58%;
-  }
-}
-
-/* 460px / 16px = 28.75em */
-@media (max-width: 28.75em) {
-  html {
-    font-size: 55%;
-  }
-}
-
-/* Base styles */
 
 body {
-  font-family: "Poppins", sans-serif;
-  font-size: 1.8rem; /* 18px */
-  font-weight: 400;
-  line-height: 1.4;
-  color: var(--main-white);
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--color-texto);
+  background-color: var(--color-fondo);
 }
 
-h1,
-h2 {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  text-align: center;
-}
-
-h1 {
-  font-size: 6rem;
-}
-
-h2 {
-  font-size: 4.2rem;
-}
-
-ul {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
-  color: var(--main-white);
-}
-
-img {
-  display: block;
-  width: 100%;
-}
-
-/* nav */
-
-.nav {
-  display: flex;
-  justify-content: flex-end;
+/* Navegación */
+.navegacion {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--main-red);
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
-  z-index: 10;
+  background: rgba(255, 255, 255, 0.95);
+  border-bottom: 1px solid #ddd;
+  z-index: 1000;
+  padding: 15px 0;
 }
 
-.nav-list {
+.lista-navegacion {
   display: flex;
-  margin-right: 2rem;
-}
-
-@media (max-width: 28.75em) {
-  .nav {
-    justify-content: center;
-  }
-
-  .nav-list {
-    margin: 0 1rem;
-  }
-}
-
-.nav-list a {
-  display: block;
-  font-size: 2.2rem;
-  padding: 2rem;
-}
-
-.nav-list a:hover {
-  background: var(--main-blue);
-}
-
-/* Welcome section */
-
-.welcome-section {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
+  list-style: none;
+  gap: 30px;
+}
+
+.lista-navegacion a {
+  color: var(--color-texto);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: var(--borde-redondeado);
+  transition: background-color 0.3s;
+}
+
+.lista-navegacion a:hover {
+  background-color: var(--color-principal);
+  color: white;
+}
+
+/* Sección de bienvenida */
+.seccion-bienvenida {
+  min-height: 100vh;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  padding: 100px 20px 50px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.contenido-bienvenida {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 1200px;
   width: 100%;
-  height: 100vh;
-  padding: 0 2rem;
-  background-color: #000;
-  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
-  text-align: center;
 }
 
-.welcome-section h1 {
-  font-size: 4rem;
-  color: var(--main-white);
-  margin-bottom: 2rem;
+.texto-bienvenida {
+  flex: 1;
 }
 
-.welcome-section > p {
-  font-size: 2.4rem;
-  font-weight: 300;
-  color: var(--main-red);
-  max-width: 800px;
+.imagen-bienvenida {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 4px solid white;
+  box-shadow: var(--sombra);
 }
 
-/* Projects section */
-
-.projects-section {
-  text-align: center;
-  padding: 10rem 2rem;
-  background: var(--main-blue);
-}
-
-.projects-section-header {
-  max-width: 640px;
-  margin: 0 auto 6rem auto;
-  border-bottom: 0.2rem solid var(--main-white);
-}
-
-@media (max-width: 28.75em) {
-  .projects-section-header {
-    font-size: 4rem;
-  }
-}
-
-/* "Automagic" image grid using no media queries */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 4rem;
+.imagen-bienvenida img {
   width: 100%;
-  max-width: 1280px;
-  margin: 0 auto;
-  margin-bottom: 6rem;
-}
-
-@media (max-width: 30.625em) {
-  .projects-section {
-    padding: 6rem 1rem;
-  }
-
-  .projects-grid {
-    grid-template-columns: 1fr;
-  }
-}
-
-.project {
-  background: var(--main-gray);
-  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  border-radius: 2px;
-}
-
-.code {
-  color: var(--main-gray);
-  transition: color 0.3s ease-out;
-}
-
-.project:hover .code {
-  color: #ff7f50;
-}
-
-.project-image {
-  height: calc(100% - 6.8rem);
-  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
-.project-title {
-  font-size: 2rem;
-  padding: 2rem 0.5rem;
+.seccion-bienvenida h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
 }
 
-.btn {
-  display: inline-block;
-  padding: 1rem 2rem;
-  border-radius: 2px;
+.seccion-bienvenida p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  opacity: 0.9;
 }
 
-.btn-show-all {
-  font-size: 2rem;
-  background: var(--main-gray);
-  transition: background 0.3s ease-out;
+.destacado {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px 20px;
+  border-radius: var(--borde-redondeado);
+  border-left: 4px solid #fbbf24;
+  font-size: 16px;
+  margin-top: 20px;
 }
 
-.btn-show-all:hover {
-  background: var(--main-red);
+/* Sección de proyectos */
+.seccion-proyectos {
+  padding: 80px 20px;
+  background: var(--color-blanco);
 }
 
-.btn-show-all:hover > i {
-  transform: translateX(2px);
-}
-
-.btn-show-all > i {
-  margin-left: 10px;
-  transform: translateX(0);
-  transition: transform 0.3s ease-out;
-}
-
-/* Contact section */
-
-.contact-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.encabezado-proyectos {
   text-align: center;
+  margin-bottom: 60px;
+}
+
+.encabezado-proyectos h2 {
+  font-size: 36px;
+  color: var(--color-texto);
+  margin-bottom: 10px;
+}
+
+.encabezado-proyectos p {
+  font-size: 18px;
+  color: var(--color-texto-claro);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.grid-proyectos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.proyecto {
+  background: white;
+  border-radius: var(--borde-redondeado);
+  overflow: hidden;
+  box-shadow: var(--sombra);
+  transition: transform 0.3s;
+  text-decoration: none;
+  color: inherit;
+}
+
+.proyecto:hover {
+  transform: translateY(-5px);
+}
+
+.imagen-proyecto {
   width: 100%;
-  height: 80vh;
-  padding: 0 2rem;
-  background: var(--main-gray);
+  height: 200px;
+  object-fit: cover;
 }
 
-.contact-section-header > h2 {
-  font-size: 6rem;
+.contenido-proyecto {
+  padding: 20px;
 }
 
-@media (max-width: 28.75em) {
-  .contact-section-header > h2 {
-    font-size: 4rem;
+.titulo-proyecto {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--color-texto);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.codigo {
+  color: var(--color-principal);
+  font-weight: normal;
+}
+
+.descripcion-proyecto {
+  color: var(--color-texto-claro);
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 15px;
+}
+
+.icono-tecnologia {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  transition: transform 0.3s;
+}
+
+.icono-tecnologia:hover {
+  transform: scale(1.1);
+}
+
+/* Sección de contacto */
+.seccion-contacto {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #1f2937 0%, #374151 100%);
+  color: white;
+  text-align: center;
+}
+
+.encabezado-contacto h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.encabezado-contacto p {
+  font-size: 18px;
+  opacity: 0.8;
+  margin-bottom: 40px;
+}
+
+.enlaces-contacto {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.detalles-contacto {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: var(--borde-redondeado);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.detalles-contacto:hover {
+  background: var(--color-principal);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contenido-bienvenida {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .imagen-bienvenida {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .seccion-bienvenida h1 {
+    font-size: 36px;
+  }
+  
+  .grid-proyectos {
+    grid-template-columns: 1fr;
+  }
+  
+  .lista-navegacion {
+    gap: 15px;
+  }
+  
+  .enlaces-contacto {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
-.contact-section-header > p {
-  font-style: italic;
-}
-
-.contact-links {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  max-width: 980px;
-  margin-top: 4rem;
-  flex-wrap: wrap;
-}
-
-.contact-details {
-  font-size: 2.4rem;
-  text-shadow: 2px 2px 1px #1f1f1f;
-  transition: transform 0.3s ease-out;
-}
-
-.contact-details:hover {
-  transform: translateY(8px);
-}
-
-/* Footer */
-
-footer {
-  font-weight: 300;
-  display: flex;
-  justify-content: space-evenly;
-  padding: 2rem;
-  background: var(--main-gray);
-  border-top: 4px solid var(--main-red);
-}
-
-footer > p {
-  margin: 2rem;
-}
-
-footer i {
-  vertical-align: middle;
-}
-
-@media (max-width: 28.75em) {
-  footer {
-    flex-direction: column;
-    text-align: center;
+@media (max-width: 480px) {
+  .seccion-bienvenida h1 {
+    font-size: 28px;
+  }
+  
+  .seccion-bienvenida p {
+    font-size: 16px;
+  }
+  
+  .encabezado-proyectos h2 {
+    font-size: 28px;
+  }
+  
+  .encabezado-contacto h2 {
+    font-size: 28px;
   }
 }
