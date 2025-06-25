@@ -2,7 +2,7 @@
 
 ## 👨‍💻 Sobre mí
 
-¡Hola! Soy desarrollador web recién graduado del Grado Superior en Desarrollo de Aplicaciones Web en el IES Trassiera. He completado los dos años de formación y estoy a la espera de realizar las prácticas.
+¡Hola! Soy desarrollador web recién graduado del Grado Superior en Desarrollo de Aplicaciones Web en el IES Aguadulce. He completado los dos años de formación y estoy a la espera de realizar las prácticas.
 
 Durante mi formación he desarrollado varios proyectos que me han permitido aprender HTML, CSS, JavaScript y otras tecnologías web. Me apasiona el desarrollo frontend y estoy ansioso por seguir aprendiendo y creciendo profesionalmente.
 
@@ -92,7 +92,7 @@ Durante mi formación he desarrollado varios proyectos que me han permitido apre
 
 - **LinkedIn**: [Ramón Mendoza](https://www.linkedin.com/in/ram%C3%B3n-mendoza-candelario-8894252a9/)
 - **GitHub**: [Ramonmendoza13](https://github.com/Ramonmendoza13)
-- **Email**: [Enviar email](mailto:tu-email@ejemplo.com)
+- **Email**: [Enviar email](mailto:ramonm828@gmail.com)
 - **Teléfono**: [684129148](tel:684129148)
 
 ---
