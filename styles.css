@@ -289,6 +289,26 @@ body {
   background: var(--color-principal);
 }
 
+.iconos-tecnologia {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.iconos-izquierda {
+  display: flex;
+  gap: 10px;
+}
+
+.icono-tecnologia,
+.icono-github {
+  width: 40px;
+}
+
+.enlace-github {
+  margin-left: auto;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .contenido-bienvenida {
