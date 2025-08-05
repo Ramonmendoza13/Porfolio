@@ -8,35 +8,47 @@ Durante mi formación he desarrollado varios proyectos que me han permitido apre
 
 ## 🚀 Proyectos
 
+### VISOR (REACT) ⭐⭐
+- **Descripción**: Versión mejorada del visor de películas y series, ahora desarrollada con React y Tailwind CSS
+- **Tecnologías**: HTML5, JavaScript, React, Tailwind CSS
+- **Estado**: Proyecto más reciente y actualizado
+- **Demo**: [Ver Demo](https://ramonmendoza13.github.io/VisorReact/)
+- **Repositorio**: [Ver Código](https://github.com/Ramonmendoza13/VisorReact)
+
+### Bajatel ⭐
+- **Descripción**: Web Full-Stack que permite gestionar tarifas, contratar y crear para admins (AUN EN DESARROLLO, le faltan funcionalidades por implementar)
+- **Tecnologías**: jQuery, Laravel, Bootstrap
+- **Estado**: Proyecto Full-Stack en desarrollo
+- **Demo**: [Ver Demo](https://bajatel.onrender.com/)
+- **Repositorio**: [Ver Código](https://github.com/Ramonmendoza13/Bajatel)
+
 ### Visor de Películas y Series ⭐
 - **Descripción**: Aplicación web para buscar y visualizar información de películas y series
 - **Tecnologías**: HTML5, CSS3, JavaScript, jQuery
-- **Estado**: Proyecto actual y funcional
-- **Enlace**: [Ver proyecto](./web-pelis-series/)
+- **Estado**: Proyecto funcional (versión anterior)
+- **Demo**: [Ver Demo](https://ramonmendoza13.github.io/web-series-pelis/)
+- **Repositorio**: [Ver Código](https://github.com/Ramonmendoza13/web-series-pelis)
+
+### MiniJuegos Clásicos
+- **Descripción**: Juegos clásicos como piedra, papel o tijera y 3 en raya (mas adelante se añadirán mas juegos)
+- **Tecnologías**: HTML5, CSS3, JavaScript
+- **Estado**: Proyecto de aprendizaje
+- **Demo**: [Ver Demo](https://ramonmendoza13.github.io/MiniJuegos/)
+- **Repositorio**: [Ver Código](https://github.com/Ramonmendoza13/MiniJuegos)
 
 ### Web del Tiempo ⭐
 - **Descripción**: Aplicación para consultar el clima en tiempo real
 - **Tecnologías**: HTML5, CSS3, JavaScript, jQuery
 - **Estado**: Proyecto actual y funcional
-- **Enlace**: [Ver proyecto](./WEB_TIEMPO/)
-
-### Piedra, Papel o Tijera
-- **Descripción**: Juego clásico de piedra, papel o tijera con interfaz interactiva
-- **Tecnologías**: HTML5, CSS3, JavaScript
-- **Estado**: Proyecto de aprendizaje
-- **Enlace**: [Ver proyecto](./PPT/)
+- **Demo**: [Ver Demo](https://ramonmendoza13.github.io/web-tiempo/)
+- **Repositorio**: [Ver Código](https://github.com/Ramonmendoza13/web-tiempo)
 
 ### Pokedeck
 - **Descripción**: Aplicación para explorar y gestionar cartas de Pokémon
 - **Tecnologías**: HTML5, CSS3, JavaScript, React
 - **Estado**: Proyecto de aprendizaje
-- **Enlace**: [Ver proyecto](./dist/)
-
-### Tres en Raya
-- **Descripción**: Juego clásico del tres en raya con diseño moderno
-- **Tecnologías**: HTML5, CSS3, JavaScript
-- **Estado**: Proyecto de aprendizaje
-- **Enlace**: [Ver proyecto](./3_en_raya/)
+- **Demo**: [Ver Demo](https://ramonmendoza13.github.io/PokeDeckDeploy/)
+- **Repositorio**: [Ver Código](https://github.com/Ramonmendoza13/PokeDeckDeploy)
 
 ## 🎨 Características del Portafolio
 
@@ -71,6 +83,10 @@ Durante mi formación he desarrollado varios proyectos que me han permitido apre
 - **CSS3**: Estilos con variables CSS y Flexbox/Grid
 - **JavaScript**: Interactividad básica
 - **jQuery**: Para proyectos más complejos
+- **React**: Framework moderno para aplicaciones interactivas
+- **Tailwind CSS**: Framework de CSS para diseño rápido
+- **Laravel**: Framework de PHP para desarrollo backend
+- **Bootstrap**: Framework CSS para diseño responsive
 - **FontAwesome**: Iconos profesionales
 
 ## 📱 Características Responsive
@@ -83,10 +99,12 @@ Durante mi formación he desarrollado varios proyectos que me han permitido apre
 ## 🎯 Próximos Pasos
 
 - [ ] Completar las prácticas del grado
-- [ ] Aprender frameworks modernos (React, Vue.js)
+- [x] Aprender React (ya implementado en VISOR React)
+- [x] Crear proyectos Full-Stack (Bajatel en desarrollo)
+- [ ] Aprender frameworks adicionales (Vue.js, Node.js)
 - [ ] Mejorar habilidades de backend
-- [ ] Crear proyectos más complejos
 - [ ] Aprender sobre testing y deployment
+- [ ] Implementar más funcionalidades en proyectos existentes
 
 ## 📞 Contacto
 

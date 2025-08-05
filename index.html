@@ -5,9 +5,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ramón Mendoza - Desarrollador Web</title>
-  <link rel="stylesheet" href="styles.css?v=1.1" />
+  <link rel="stylesheet" href="styles.css?v=2.0" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <style>
+    /* Estilos de emergencia para los botones en caso de que el CSS principal no cargue */
+    .botones-proyecto {
+      display: flex !important;
+      gap: 10px !important;
+      margin-top: auto !important;
+    }
+    .btn-demo, .btn-repo {
+      flex: 1 !important;
+      padding: 10px 15px !important;
+      border-radius: 6px !important;
+      text-decoration: none !important;
+      font-weight: 500 !important;
+      font-size: 14px !important;
+      text-align: center !important;
+      display: flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      gap: 6px !important;
+    }
+    .btn-demo {
+      background: #2563eb !important;
+      color: white !important;
+      border: 2px solid #2563eb !important;
+    }
+    .btn-repo {
+      background: transparent !important;
+      color: #333 !important;
+      border: 2px solid #ddd !important;
+    }
+  </style>
 </head>
 
 <body>
@@ -53,8 +84,6 @@
       <h2>Mis Proyectos</h2>
       <p>Aquí tienes algunos de los proyectos que he desarrollado durante mi formación</p>
     </div>
-
-
 
     <div class="grid-proyectos">
       <div class="proyecto">

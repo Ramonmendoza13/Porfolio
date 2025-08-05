@@ -254,6 +254,7 @@ body {
   display: flex;
   gap: 10px;
   margin-top: auto;
+  width: 100%;
 }
 
 .btn-demo,
@@ -270,23 +271,30 @@ body {
   align-items: center;
   justify-content: center;
   gap: 6px;
+  min-height: 40px;
+  box-sizing: border-box;
 }
 
 .btn-demo {
   background: var(--color-principal);
+  background: #2563eb; /* Fallback */
   color: white;
   border: 2px solid var(--color-principal);
+  border: 2px solid #2563eb; /* Fallback */
 }
 
 .btn-demo:hover {
   background: var(--color-secundario);
+  background: #1e40af; /* Fallback */
   border-color: var(--color-secundario);
+  border-color: #1e40af; /* Fallback */
   transform: translateY(-2px);
 }
 
 .btn-repo {
   background: transparent;
   color: var(--color-texto);
+  color: #333; /* Fallback */
   border: 2px solid #ddd;
 }
 
