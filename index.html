@@ -5,44 +5,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ramón Mendoza - Desarrollador Web</title>
-  <link rel="stylesheet" href="styles.css?v=2.0" />
+  <link rel="stylesheet" href="styles.css?v=9.0" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <style>
-    /* Estilos de emergencia para los botones en caso de que el CSS principal no cargue */
-    .botones-proyecto {
-      display: flex !important;
-      gap: 10px !important;
-      margin-top: auto !important;
-    }
 
-    .btn-demo,
-    .btn-repo {
-      flex: 1 !important;
-      padding: 10px 15px !important;
-      border-radius: 6px !important;
-      text-decoration: none !important;
-      font-weight: 500 !important;
-      font-size: 14px !important;
-      text-align: center !important;
-      display: flex !important;
-      align-items: center !important;
-      justify-content: center !important;
-      gap: 6px !important;
-    }
-
-    .btn-demo {
-      background: #2563eb !important;
-      color: white !important;
-      border: 2px solid #2563eb !important;
-    }
-
-    .btn-repo {
-      background: transparent !important;
-      color: #333 !important;
-      border: 2px solid #ddd !important;
-    }
-  </style>
 </head>
 
 <body>
@@ -61,23 +27,18 @@
       </div>
       <div class="texto-bienvenida">
         <h1>Soy Ramón Mendoza</h1>
-        <p>¡Hola! Soy desarrollador web recién graduado del Grado Superior en Desarrollo de Aplicaciones Web en el IES
-          Aguadulce. He completado los dos años de formación y estoy a la espera de realizar las prácticas.</p>
-        <p>Durante mi formación he desarrollado varios proyectos que me han permitido aprender HTML, CSS(Bootstrap,
-          SASS), JavaScript(jQuery, React),PHP(Laravel), JAVA y otras tecnologías web. Me apasiona el desarrollo
-          back-end y estoy ansioso por seguir aprendiendo y creciendo profesionalmente.</p>
-
+        <p>¡Hola! Soy desarrollador web graduado del Grado Superior en Desarrollo de Aplicaciones Web en el IES
+          Aguadulce. He completado mi formación académica y las prácticas profesionales, donde adquirí experiencia
+          práctica en el desarrollo de aplicaciones web.</p>
+        <p>Durante mi formación he desarrollado varios proyectos full-stack que me han permitido dominar tecnologías
+          como HTML, CSS (Tailwind CSS, Bootstrap, SASS), JavaScript (React, Astro, Node.js, jQuery), PHP (Laravel),
+          Java (Spring Boot) y Docker. Me apasiona y me gusta especializarme en el desarrollo back-end. Tengo
+          experiencia en optimización SEO tras mis prácticas profesionales.</p>
         <div class="boton-cv">
           <a href="CV_Ramon_Mendoza.pdf" download class="btn-descargar-cv">
             <i class="fas fa-download"></i>
             Descargar CV
           </a>
-        </div>
-
-        <div class="destacado">
-          <i class="fas fa-lightbulb"></i>
-          Algunos de mis proyectos son antiguos y no represtan mi conocimiento actual, pero aun no he tenido tiempo de
-          actualizarlos. Estoy trabajando en proyectos nuevos y actualizados Full-Stack.
         </div>
       </div>
     </div>
@@ -128,73 +89,18 @@
           </p>
           <div class="tecnologias">
             <div class="iconos-tecnologia">
-              <img src="imgs/jquery-original.svg" alt="jQuery" class="icono-tecnologia" title="jQuery">
+              <img src="imgs/react-original.svg" alt="React" class="icono-tecnologia" title="React">
+              <img src="imgs/Tailwind_CSS_Logo.svg" alt="Tailwind CSS" class="icono-tecnologia" title="Tailwind CSS">
               <img src="imgs/laravel.svg" alt="Laravel" class="icono-tecnologia" title="Laravel">
-              <img src="imgs/bootstrap.svg" alt="Bootstrap" class="icono-tecnologia" title="Bootstrap">
+              <img src="imgs/docker-icon.svg" alt="Docker" class="icono-tecnologia" title="Docker">
             </div>
           </div>
           <div class="botones-proyecto">
-            <a href="https://bajatel.onrender.com/" target="_blank" class="btn-demo">
+            <a href="https://ramonmendoza13.github.io/TFGBajatel/" target="_blank" class="btn-demo">
               <i class="fas fa-external-link-alt"></i>
               Ver Demo
             </a>
-            <a href="https://github.com/Ramonmendoza13/Bajatel" target="_blank" class="btn-repo">
-              <i class="fab fa-github"></i>
-              Repositorio
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="proyecto">
-        <img class="imagen-proyecto" src="imgs/visor.png" alt="Visor de Películas y Series" />
-        <div class="contenido-proyecto">
-          <p class="titulo-proyecto">
-            <span class="codigo">Visor de Películas y Series /></span>
-          </p>
-          <p class="descripcion-proyecto">Aplicación web para buscar y visualizar información de películas y series</p>
-          <div class="tecnologias">
-            <div class="iconos-tecnologia">
-              <img src="imgs/html5-original.svg" alt="HTML5" class="icono-tecnologia" title="HTML5">
-              <img src="imgs/css3-original.svg" alt="CSS3" class="icono-tecnologia" title="CSS3">
-              <img src="imgs/javascript-original.svg" alt="JavaScript" class="icono-tecnologia" title="JavaScript">
-              <img src="imgs/jquery-original.svg" alt="jQuery" class="icono-tecnologia" title="jQuery">
-            </div>
-          </div>
-          <div class="botones-proyecto">
-            <a href="https://ramonmendoza13.github.io/web-series-pelis/" target="_blank" class="btn-demo">
-              <i class="fas fa-external-link-alt"></i>
-              Ver Demo
-            </a>
-            <a href="https://github.com/Ramonmendoza13/web-series-pelis" target="_blank" class="btn-repo">
-              <i class="fab fa-github"></i>
-              Repositorio
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="proyecto">
-        <img class="imagen-proyecto" src="imgs/minijuegos.png" alt="Piedra, Papel o Tijera" />
-        <div class="contenido-proyecto">
-          <p class="titulo-proyecto">
-            <span class="codigo">MiniJuegos clasico /></span>
-          </p>
-          <p class="descripcion-proyecto">Juegos clásico como piedra, papel o tijera y 3 en raya (mas adelante se
-            añadirán mas juegos)</p>
-          <div class="tecnologias">
-            <div class="iconos-tecnologia">
-              <img src="imgs/html5-original.svg" alt="HTML5" class="icono-tecnologia" title="HTML5">
-              <img src="imgs/css3-original.svg" alt="CSS3" class="icono-tecnologia" title="CSS3">
-              <img src="imgs/javascript-original.svg" alt="JavaScript" class="icono-tecnologia" title="JavaScript">
-            </div>
-          </div>
-          <div class="botones-proyecto">
-            <a href="https://ramonmendoza13.github.io/MiniJuegos/" target="_blank" class="btn-demo">
-              <i class="fas fa-external-link-alt"></i>
-              Ver Demo
-            </a>
-            <a href="https://github.com/Ramonmendoza13/MiniJuegos" target="_blank" class="btn-repo">
+            <a href="https://github.com/Ramonmendoza13/TFGBajatel" target="_blank" class="btn-repo">
               <i class="fab fa-github"></i>
               Repositorio
             </a>
@@ -223,34 +129,6 @@
               Ver Demo
             </a>
             <a href="https://github.com/Ramonmendoza13/web-tiempo" target="_blank" class="btn-repo">
-              <i class="fab fa-github"></i>
-              Repositorio
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <div class="proyecto">
-        <img class="imagen-proyecto" src="imgs/Pokemon.png" alt="Pokedeck" />
-        <div class="contenido-proyecto">
-          <p class="titulo-proyecto">
-            <span class="codigo"> Pokedeck /></span>
-          </p>
-          <p class="descripcion-proyecto">Aplicación para explorar y gestionar cartas de Pokémon</p>
-          <div class="tecnologias">
-            <div class="iconos-tecnologia">
-              <img src="imgs/html5-original.svg" alt="HTML5" class="icono-tecnologia" title="HTML5">
-              <img src="imgs/css3-original.svg" alt="CSS3" class="icono-tecnologia" title="CSS3">
-              <img src="imgs/javascript-original.svg" alt="JavaScript" class="icono-tecnologia" title="JavaScript">
-              <img src="imgs/react-original.svg" alt="React" class="icono-tecnologia" title="React">
-            </div>
-          </div>
-          <div class="botones-proyecto">
-            <a href="https://ramonmendoza13.github.io/PokeDeckDeploy/" target="_blank" class="btn-demo">
-              <i class="fas fa-external-link-alt"></i>
-              Ver Demo
-            </a>
-            <a href="https://github.com/Ramonmendoza13/PokeDeckDeploy" target="_blank" class="btn-repo">
               <i class="fab fa-github"></i>
               Repositorio
             </a>
