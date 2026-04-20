@@ -10,23 +10,23 @@ Durante mi formación he desarrollado varios proyectos full-stack que me han per
 
 Este portafolio muestra algunos de mis proyectos principales. **Visita mi [perfil de GitHub](https://github.com/Ramonmendoza13) para ver más proyectos y contribuciones.**
 
-### VISOR (REACT)
-- **Descripción**: Aplicación web para buscar y visualizar información de películas y series conectada a una API en Laravel para que cada usuario tenga su propia watchlist
-- **Tecnologías**: React, Tailwind CSS, Laravel
-- **Demo**: [Ver Demo](https://ramonmendoza13.github.io/VisorReact/)
-- **Repositorio**: [Ver Código](https://github.com/Ramonmendoza13/VisorReact)
+### Mercado Segunda Mano
+- **Descripción**: Marketplace completo de compra y venta con pasarela de pagos. Desarrollado con Spring Boot y PostgreSQL, integrando APIs de Stripe, SendGrid y Cloudinary.
+- **Tecnologías**: Spring Boot, PostgreSQL, Docker, Bootstrap, Stripe, SendGrid, Cloudinary
+- **Demo**: [Ver Demo](https://mercadosegundamano.onrender.com/)
+- **Repositorio**: [Ver Código](https://github.com/Ramonmendoza13/MercadoSegundaMano)
 
 ### Bajatel
-- **Descripción**: Web Full-Stack que permite gestionar tarifas, contratar servicios y panel de administración
-- **Tecnologías**: React, Tailwind CSS, Laravel, Docker
+- **Descripción**: Plataforma integral para gestión de telecomunicaciones con roles de usuario. Frontend en React y Tailwind, conectado a una API REST en Laravel documentada en Swagger y desplegada en Render.
+- **Tecnologías**: React, Tailwind CSS, Laravel, Docker, Swagger
 - **Demo**: [Ver Demo](https://ramonmendoza13.github.io/TFGBajatel/)
 - **Repositorio**: [Ver Código](https://github.com/Ramonmendoza13/TFGBajatel)
 
-### Web del Tiempo
-- **Descripción**: Aplicación para consultar el clima en tiempo real
-- **Tecnologías**: HTML5, CSS3, JavaScript, jQuery
-- **Demo**: [Ver Demo](https://ramonmendoza13.github.io/web-tiempo/)
-- **Repositorio**: [Ver Código](https://github.com/Ramonmendoza13/web-tiempo)
+### VISOR
+- **Descripción**: Aplicación web para buscar y visualizar información de películas y series conectada a una API en Laravel para que cada usuario tenga su propia watchlist.
+- **Tecnologías**: React, Tailwind CSS, Laravel
+- **Demo**: [Ver Demo](https://ramonmendoza13.github.io/VisorReact/)
+- **Repositorio**: [Ver Código](https://github.com/Ramonmendoza13/VisorReact)
 
 ## 🛠️ Stack Tecnológico
 
